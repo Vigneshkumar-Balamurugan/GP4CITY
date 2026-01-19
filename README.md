@@ -7,12 +7,16 @@ This repository provides a Python implementation of a Gaussian plume model for s
 gaussian-plume-model/
 │
 ├─ plume/
-│ ├─ coordinates.py # Functions to convert and rotate coordinates
-│ ├─ dispersion.py # Functions to calculate dispersion co-efficients
-│ ├─ plume_model.py # Gaussian plume calculations
-│ └─ wind.py # Wind speed and direction calculations
+│  ├─ coordinates.py    # Functions to convert and rotate coordinates
+│  ├─ dispersion.py     # Functions to calculate dispersion coefficients
+│  ├─ plume_model.py    # Gaussian plume calculations
+│  └─ wind.py           # Wind speed and direction calculations
+│
 ├─ scripts/
-│ └─ run_model.py # Main script to run the model
+│  └─ run_model.py      # Main script to run the model
+│
+└─ README.md
+
 ---
 
 ⚡ Usage
