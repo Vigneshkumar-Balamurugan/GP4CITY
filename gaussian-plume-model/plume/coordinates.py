@@ -11,7 +11,7 @@ def rotate_coords(dx, dy, wind_dir_deg):
     return x_rot, y_rot
 
 
-def lonlat_to_utm(lon, lat, epsg="EPSG:32643"):
+def lonlat_to_utm(lon, lat, epsg):
     """
     Convert lon/lat to UTM coordinates.
     """
