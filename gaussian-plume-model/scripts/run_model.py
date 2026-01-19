@@ -5,8 +5,8 @@ from plume.coordinates import rotate_coords, lonlat_to_utm
 from plume.plume_model import gaussian_plume
 from plume.wind import compute_wind
 
-INPUT_FILE = "H:/conference/DAAD/work/test_data.csv"
-OUTPUT_FILE = "H:/conference/DAAD/work/GP_Modelled_Concentration.csv"
+INPUT_FILE = "gaussian-plume-model/data/test_data.csv"
+OUTPUT_FILE = "gaussian-plume-model/data/GP_Modelled_Concentration.csv"
 
 Z_RECEPTOR = 10.0  # meters
 SECONDS_PER_YEAR = 365 * 24 * 60 * 60
@@ -56,3 +56,4 @@ if __name__ == "__main__":
         output_csv=OUTPUT_FILE,
         UTM_PROJ=UTM_PROJ,
     )
+
