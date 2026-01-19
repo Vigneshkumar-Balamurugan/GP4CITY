@@ -5,7 +5,7 @@ This repository provides a Python implementation of a Gaussian plume model for s
 
 ## 📂 Repository Structure
 
-```text
+`
 gaussian-plume-model/
 │
 ├─ plume/
@@ -18,7 +18,7 @@ gaussian-plume-model/
 │  └─ run_model.py      # Main script to run the model
 │
 └─ README.md
-
+`
 ---
 
 ⚡ Usage
