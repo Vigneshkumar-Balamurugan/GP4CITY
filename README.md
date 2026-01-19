@@ -22,9 +22,24 @@ gaussian-plume-model/
 
 ⚡ Usage
 
-The main script is run_model.py located in scripts/. You can run the model using your own input CSV file:
-python scripts/run_model.py
+The main script for running the model is `run_model.py`, located in the `scripts/` directory.
 
+Before executing the script, update the required configuration parameters in `run_model.py` as needed:
+
+- **`Z_RECEPTOR = 10.0`**  
+  Height of the receptor (i.e., the elevation at which air pollutant concentrations are modelled), in meters.
+
+- **`SECONDS_PER_YEAR = 365 * 24 * 60 * 60`**  
+  Total number of seconds in one year.
+
+- **`UTM_PROJ = "EPSG:32643"`**  
+  UTM coordinate reference system used for the study region.
+
+After configuring these parameters, run the model using:
+
+```bash
+python scripts/run_model.py
+```
 
 ### Input Data
 
@@ -36,9 +51,9 @@ The input CSV file should contain the following columns:
 | Longitude |	Source longitude (degrees) of each grid point (receptor) |
 | Latitude |	Source latitude (degrees) of each grid point (receptor) |
 | Emi_val |	Emission rate of pollutant of each grid point (receptor) |
-|H |	Stack height (m) of each grid point (receptor) |
-|u_component|	Wind speed in x-direction (m/s) of each grid point (receptor) |
-|v_component | Wind speed in y-direction (m/s) of each grid point (receptor) |
+| H |	Stack height (m) of each grid point (receptor) |
+| u_component |	Wind speed in x-direction (m/s) of each grid point (receptor) |
+| v_component | Wind speed in y-direction (m/s) of each grid point (receptor) |
 
 ### Output
 
