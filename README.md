@@ -41,7 +41,7 @@ Before executing the script, update the required configuration parameters in `ru
 After configuring these parameters, run the model using:
 
 ```bash
-python scripts/run_model.py
+python -m scripts.run_model
 ```
 
 ### Input Data
@@ -53,7 +53,7 @@ The input CSV file should contain the following columns:
 | Time |	Timestamp (YYYY-MM-DD HH:MM:SS) of each grid point (receptor)|
 | Longitude |	Source longitude (degrees) of each grid point (receptor) |
 | Latitude |	Source latitude (degrees) of each grid point (receptor) |
-| Emi_val |	Emission rate of pollutant of each grid point (receptor) |
+| Emi_val |	Emission rate (kt/year) of pollutant of each grid point (receptor) |
 | H |	Stack height (m) of each grid point (receptor) |
 | u_component |	Wind speed in x-direction (m/s) of each grid point (receptor) |
 | v_component | Wind speed in y-direction (m/s) of each grid point (receptor) |
