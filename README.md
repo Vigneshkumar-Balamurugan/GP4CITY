@@ -4,6 +4,8 @@ This repository provides a Python implementation of a Gaussian plume model for s
 ---
 
 ## 📂 Repository Structure
+
+```text
 gaussian-plume-model/
 │
 ├─ plume/
@@ -30,7 +32,7 @@ python scripts/run_model.py
 The input CSV file should contain the following columns:
 
 | **Field** | **Description** | 
-|-----------|----------------|------------------|
+|-----------|----------------|
 | Time |	Timestamp (YYYY-MM-DD HH:MM:SS) of each grid point (receptor)|
 | Longitude |	Source longitude (degrees) of each grid point (receptor) |
 | Latitude |	Source latitude (degrees) of each grid point (receptor) |
@@ -44,7 +46,7 @@ The input CSV file should contain the following columns:
 The output CSV file contains:
 
 | **Field** | **Description** | 
-|-----------|----------------|------------------|
+|-----------|----------------|
 | Time |	Timestamp (YYYY-MM-DD HH:MM:SS)  of each grid point (receptor)|
 | Longitude |	Source longitude (degrees)  of each grid point (receptor)|
 | Latitude |	Source latitude (degrees)  of each grid point (receptor)|
