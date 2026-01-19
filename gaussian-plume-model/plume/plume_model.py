@@ -1,7 +1,7 @@
 import numpy as np
 from .dispersion import get_dispersion_coefficients
 
-def gaussian_plume(Q, x, y, H, u, z):
+def gaussian_plume(Q, x, y, H, u, z, hour_time):
     """
     Gaussian plume concentration model.
     """
@@ -9,7 +9,7 @@ def gaussian_plume(Q, x, y, H, u, z):
     mask = x > 0
 
     if np.any(mask):
-        sigma_y, sigma_z = get_dispersion_coefficients(x[mask])
+        sigma_y, sigma_z = get_dispersion_coefficients(x[mask], u, hour_time)
 
         C[mask] = (
             Q / (2 * np.pi * u * sigma_y * sigma_z)
