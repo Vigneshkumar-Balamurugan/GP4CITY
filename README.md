@@ -67,4 +67,4 @@ The output CSV file contains:
 | Time |	Timestamp (YYYY-MM-DD HH:MM:SS)  of each grid point (receptor)|
 | Longitude |	Source longitude (degrees)  of each grid point (receptor)|
 | Latitude |	Source latitude (degrees)  of each grid point (receptor)|
-| Modelled_Concentration | Modelled concentration of each grid point (receptor) in \mu\text{g m}^{-3}|
+| Modelled_Concentration | Modelled concentration of each grid point (receptor) in μg/m³|
