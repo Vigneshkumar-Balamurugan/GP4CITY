@@ -9,6 +9,7 @@ gaussian-plume-model/
 │
 ├─ data/
 │  ├─ test_data.csv
+│
 ├─ plume/
 │  ├─ coordinates.py    # Functions to convert and rotate coordinates
 │  ├─ dispersion.py     # Functions to calculate dispersion coefficients
