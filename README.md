@@ -18,8 +18,7 @@ gaussian-plume-model/
 │
 ├─ scripts/
 │  └─ run_model.py      # Main script to run the model
-│
-└─ README.md
+
 ```
 ---
 
